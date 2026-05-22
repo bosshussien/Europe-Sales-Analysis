@@ -62,13 +62,13 @@ class OutlierHandling:  # this class is using IQR to display and handle outliers
 
             iqr, lower, upper = self.fit_IQR(df[i])
             print(f"{i} : ")
-            for counter, j in df[i].items():
+            for index, j in df[i].items():
                 if j > upper:
                     higher_outliers.append(j)
-                    print(f"{counter} : {j}")
+                    print(f"{index} : {j}")
                 elif j < lower:
                     lower_outliers.append(j)
-                    print(f"{counter} : {j}")
+                    print(f"{index} : {j}")
             print("_________")
         return higher_outliers, lower_outliers
 
