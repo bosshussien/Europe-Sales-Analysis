@@ -105,7 +105,7 @@ class OutlierHandling:  # this class is using IQR to display and handle outliers
                 print("________________\n")
 
     # this function to plot outliers
-    def plot(self, dataframe: pd.DataFrame, h=10, w=6):
+    def plot(self, dataframe: pd.DataFrame, h=3, w=3):
 
         length_list_hs = []
         length_list_ls = []
