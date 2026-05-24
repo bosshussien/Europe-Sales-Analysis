@@ -35,9 +35,6 @@ Dataset source:
 * NumPy
 * Matplotlib
 * Seaborn
-* scikit-learn
-* imbalanced-learn
-* joblib
 
 ---
 
